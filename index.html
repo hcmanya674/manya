@@ -3,6 +3,7 @@
 <head>
 <title>Manya | AI & Data Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <style>
   html {scroll-behavior: smooth;}
   body {
@@ -166,24 +167,43 @@
       justify-content:center;
       gap:20px;
   }
-  .skills-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+/* Skills Section */
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:30px;
 }
 
 .skill{
-padding:12px 22px;
-background:#38bdf8;
-color:#111827;
-font-weight:bold;
-border-radius:30px;
-transition:.3s;
+
+    background:#38bdf8;
+    color:#0f172a;
+
+    padding:14px 25px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(56,189,248,.3);
+
 }
 
 .skill:hover{
-transform:translateY(-5px);
+
+    transform:translateY(-6px);
+
+    background:white;
+
+    box-shadow:0 10px 25px rgba(56,189,248,.5);
+
 }
 footer{
 text-align:center;
@@ -242,16 +262,35 @@ color:#94a3b8;
   </p>
 </section>
 <section id="skills">
-<h2>Skills</h2>
-<div class="skills-container">
-<div class="skill">Python</div>
-<div class="skill">Java</div>
-<div class="skill">SQL</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Machine Learning</div>
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+    <i class="fab fa-python"></i> Python
 </div>
+
+<div class="skill">
+    <i class="fab fa-java"></i> Java
+</div>
+
+<div class="skill">
+    <i class="fab fa-html5"></i> HTML
+</div>
+
+<div class="skill">
+    <i class="fab fa-css3-alt"></i> CSS
+</div>
+
+<div class="skill">
+    <i class="fab fa-js"></i> JavaScript
+</div>
+
+<div class="skill">
+    <i class="fas fa-database"></i> SQL
+</div>
+
+    </div>
 </section> 
 
 
