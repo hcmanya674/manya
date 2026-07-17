@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Manya | AI & Data Portfolio</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-  html {
-  scroll-behavior: smooth;
-  }
-    body {
+<title>Manya | AI & Data Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+  html {scroll-behavior: smooth;}
+  body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #0f172a, #1e293b);
   color: white;
-
-    }
-     h1 {
+  }
+  h1 {
   font-size: 42px;
   color: #38bdf8;
   text-shadow: 0 0 10px #38bdf8;
   }
-   
-    h2 {
+  h2 {
   color: #38bdf8;
   margin-bottom: 20px;
-}
-header{
+  }
+  header{
     padding:150px 20px 80px;
-}
-   header p {
+  }
+  header p {
   font-size: 18px;
   margin-bottom: 25px;
-}
-    .profile {
+  }
+  .profile {
   width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 3px solid #38bdf8;
-}
-    .btn {
+  }
+  .btn {
   background: #38bdf8;
   padding: 12px 25px;
   color: black;
@@ -46,17 +41,17 @@ header{
   border-radius: 30px;
   font-weight: bold;
   transition: 0.3s;
-}
+  }
 
-.btn:hover {
+ .btn:hover {
   background: white;
-}
-    section {
+  }
+  section {
   padding: 60px 20px;
   max-width: 900px;
   margin: auto;
-}
-    .card {
+  }
+  .card {
   background: #1e293b;
   margin: 20px auto;
   padding: 25px;
@@ -64,14 +59,13 @@ header{
   border-radius: 15px;
   transition: 0.3s;
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
-}
-
-.card:hover {
+  }
+  .card:hover {
   transform: scale(1.05);
-}
+  }
 /* Navigation Bar */
 
-.navbar{
+    .navbar{
     position:fixed;
     top:0;
     left:0;
@@ -84,113 +78,119 @@ header{
     backdrop-filter:blur(10px);
     z-index:1000;
     box-sizing:border-box;
-}
+    box-shadow:0 5px 20px rgba(0,0,0,.35);
+    }
 
-.logo{
+    .logo{
     color:#38bdf8;
     font-size:28px;
     font-weight:700;
-}
+    }
 
-.nav-links{
+    .nav-links{
     display:flex;
     list-style:none;
     gap:30px;
     margin:0;
     padding:0;
-}
+    }
 
-.nav-links a{
+    .nav-links a{
     text-decoration:none;
     color:white;
     font-weight:500;
     transition:.3s;
-}
+    }
 
-.nav-links a:hover{
+    .nav-links a:hover{
     color:#38bdf8;
-  
-}
+    }
+   .nav-links a{
+   position:relative;
+   }
+   .nav-links a::after{
+   content:"";
+   position:absolute;
+   left:0;
+   bottom:-5px;
+   width:0;
+   height:2px;
+   background:#38bdf8;
+   transition:.3s;
+   }
+   .nav-links a:hover::after{
+   width:100%;
+   }
     .hero{
-
-text-align:center;
-
-padding:170px 20px 120px;
-
+    text-align:center;
+    padding:170px 20px 120px;
+    }
+    .hero h1{
+    font-size:52px;
+    margin:20px 0;
+    }
+    .hero h3{
+    font-size:24px;
+      color:#38bdf8;
+     }
+   .hero p{
+   max-width:700px;
+   margin:auto;
+   line-height:1.8;
+   font-size:18px;
+   opacity:.9;
+   }
+  .btn2{
+   padding:12px 25px;
+   border:2px solid #38bdf8;
+   border-radius:30px;
+   color:#38bdf8;
+   margin-left:15px;
+   text-decoration:none;
+   transition:.3s;
+  }
+  .btn2:hover{
+   background:#38bdf8;
+   color:black;
+  }   
+  .profile{
+   transition:.4s;
+  }
+  .profile:hover{
+   transform:scale(1.08);
+   box-shadow:0 0 30px #38bdf8;
+  }
+  .buttons{
+      margin-top:35px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+  }
+  .skills-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 }
 
-.hero h1{
-
-font-size:52px;
-
-margin:20px 0;
-
-}
-
-.hero h3{
-
-font-size:24px;
-
-color:#38bdf8;
-
-}
-
-.hero p{
-
-width:60%;
-
-margin:auto;
-
-line-height:1.8;
-
-font-size:18px;
-
-opacity:.9;
-
-}
-.btn2{
-
-padding:12px 25px;
-
-border:2px solid #38bdf8;
-
-border-radius:30px;
-
-color:#38bdf8;
-
-margin-left:15px;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-.btn2:hover{
-
+.skill{
+padding:12px 22px;
 background:#38bdf8;
-
-color:black;
-
-}   
-.profile{
-
-transition:.4s;
-
+color:#111827;
+font-weight:bold;
+border-radius:30px;
+transition:.3s;
 }
 
-.profile:hover{
-
-transform:scale(1.08);
-
-box-shadow:0 0 30px #38bdf8;
-
+.skill:hover{
+transform:translateY(-5px);
 }
-body{
-
-background:
-linear-gradient(135deg,#0f172a,#1e293b,#111827);
-
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+margin-top:50px;
+color:#94a3b8;
 }
   </style>
 </head>
@@ -241,15 +241,19 @@ linear-gradient(135deg,#0f172a,#1e293b,#111827);
     I love building models and analyzing data to extract insights.
   </p>
 </section>
-  
 <section id="skills">
-  <h2>SKILLS</h2>
-  <div class="card">Python</div>
-  <div class="card">HTML,CSS,JavaScript</div>
-  <div class="card">Java</div>
-  <div class="card">Machine Learning</div>
-  <div class="card">SQL</div>
-</section>
+<h2>Skills</h2>
+<div class="skills-container">
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">SQL</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Machine Learning</div>
+</div>
+</section> 
+
 
 <section id="projects">
   <h2>Projects</h2>
@@ -257,14 +261,14 @@ linear-gradient(135deg,#0f172a,#1e293b,#111827);
   <div class="card">
   <h3>Netflix Data Analysis</h3>
   <p>Exploratory data analysis on Netflix dataset using Python, Pandas, and Matplotlib.</p>
-  <a href=" https://hcmanya674.github.io/netflixdata_analysis/" target="_blank" class="btn">View Code</a>
+  <a href="https://hcmanya674.github.io/netflixdata_analysis/" target="_blank" class="btn">View Code</a>
   </div>
   <div class="card">
   <h3>Spotify Data Analysis</h3>
   <p>Exploratory data analysis on spotify dataset using Python, Pandas, plotly and numpy.</p>
-  <a href=" https://hcmanya674.github.io/spotify-data-analysis/" class="btn">View Project</a>
+  <a href="https://hcmanya674.github.io/spotify-data-analysis/" class="btn">View Project</a>
   </div>
-  </div>
+  
 
   <div class="card">
     <h3>Machine Learning Model</h3>
@@ -276,16 +280,23 @@ linear-gradient(135deg,#0f172a,#1e293b,#111827);
   <a href="https://github.com/hcmanya674/project-name" target="_blank" class="btn">View Code</a>
 </div>
   <p>
-  <a href="https://github.com/hcmanya674" target="_blank">GitHub</a> |
-  <a href="https://www.linkedin.com/in/manya-h-c-470341333/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FDGORrnwQBCbE9uM5B%2Boxg%3D%3D" target="_blank">LinkedIn</a>
+  <a href="https://github.com/hcmanya674" target="_blank">🐙 GitHub</a> |
+  <a href="https://www.linkedin.com/in/manya-h-c-470341333/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FDGORrnwQBCbE9uM5B%2Boxg%3D%3D" target="_blank">💼 LinkedIn</a>
 </p>
 
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email:hcmanya674@email.com</p>
+  <p>📧Email:hcmanya674@email.com</p>
 </section>
 
 </body>
+<footer>
+
+<p>
+© 2026 Manya H C
+</p>
+
+</footer>
 </html>
